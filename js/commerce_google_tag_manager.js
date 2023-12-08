@@ -25,7 +25,6 @@
         })
         .then((data) => {
           if (data && data.length) {
-            console.log(dataLayer);
             data.forEach(function (eventData) {
               dataLayer.push(eventData);
             });
