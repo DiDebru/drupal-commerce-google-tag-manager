@@ -2,7 +2,7 @@
  * @file
  * Defines Javascript behaviors for the commerce_google_tag_manager module.
  */
-(function (Drupal, drupalSettings) {
+(function (Drupal, drupalSettings, window) {
   Drupal.behaviors.datalayer_push = {
     attach: function (context, settings) {
       if (!drupalSettings) {
@@ -36,4 +36,4 @@
         });
     },
   };
-})(Drupal, drupalSettings);
+})(Drupal, drupalSettings, window);
